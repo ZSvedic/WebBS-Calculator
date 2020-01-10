@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B41E9AB2-1199-40DD-94B6-A709CD725D38}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebBloatScore</RootNamespace>
+    <AssemblyName>WebBloatScore</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\Logger.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\CleanerConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CaptureResult.cs" />
+    <Compile Include="Models\DetailsResult.cs" />
+    <Compile Include="Models\DetailsResultCollection.cs" />
+    <Compile Include="Models\ExitCode.cs" />
+    <Compile Include="Models\SlimerExecutor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Images\Google-Results.png" />
+    <Content Include="Content\Images\Laurel_Hardy_Flying_Deuces.jpg" />
+    <Content Include="PngQuant\pngquant.exe" />
+    <Content Include="PngQuant\README.txt" />
+    <Content Include="README.md" />
+    <Content Include="TooManyRequests.html" />
+    <Content Include="Content\Images\growth-average-web-page2014.png" />
+    <Content Include="Content\Images\Laurel-Hardy-Men-O-War.jpg" />
+    <Content Include="Content\Images\ogicon.png" />
+    <Content Include="Content\Images\favicon.ico" />
+    <Content Include="Content\Styles\font.css" />
+    <Content Include="Error.html" />
+    <Content Include="Global.asax" />
+    <Content Include="NotFound.html" />
+    <Content Include="Slimerjs\chrome\icons\default\default32.png" />
+    <Content Include="Slimerjs\chrome\icons\default\default48.png" />
+    <Content Include="Slimerjs\chrome\icons\default\slimerjswin.ico" />
+    <Content Include="Slimerjs\lib\deflate.js" />
+    <Content Include="Slimerjs\lib\inflate.js" />
+    <Content Include="Slimerjs\lib\utils\common.js" />
+    <Content Include="Slimerjs\lib\utils\strings.js" />
+    <Content Include="Slimerjs\lib\zlib\adler32.js" />
+    <Content Include="Slimerjs\lib\zlib\constants.js" />
+    <Content Include="Slimerjs\lib\zlib\crc32.js" />
+    <Content Include="Slimerjs\lib\zlib\deflate.js" />
+    <Content Include="Slimerjs\lib\zlib\gzheader.js" />
+    <Content Include="Slimerjs\lib\zlib\inffast.js" />
+    <Content Include="Slimerjs\lib\zlib\inflate.js" />
+    <Content Include="Slimerjs\lib\zlib\inftrees.js" />
+    <Content Include="Slimerjs\lib\zlib\messages.js" />
+    <Content Include="Slimerjs\lib\zlib\trees.js" />
+    <Content Include="Slimerjs\lib\zlib\zstream.js" />
+    <Content Include="Slimerjs\pako_deflate.js" />
+    <Content Include="Slimerjs\slimerjs.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\config.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\errors.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\hub_register.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\inputs.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\logger.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\main.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\request_handlers\request_handler.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\request_handlers\router_request_handler.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\request_handlers\session_manager_request_handler.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\request_handlers\session_request_handler.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\request_handlers\shutdown_request_handler.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\request_handlers\status_request_handler.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\request_handlers\webelement_request_handler.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\session.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\console++.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\har.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\parseuri.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\uuid.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\active_element.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\clear.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\clear_local_storage.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\clear_session_storage.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\click.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\default_content.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\deps.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\double_click.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\drag.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\execute_async_script.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\execute_script.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\execute_sql.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\find_element.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\find_elements.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\focus_on_element.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\frame_by_id_or_name.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\frame_by_index.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_appcache_status.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_attribute.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_attribute_value.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_current_position.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_element_from_cache.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_frame_window.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_in_view_location.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_local_storage_item.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_local_storage_keys.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_local_storage_size.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_location.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_location_in_view.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_session_storage_item.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_session_storage_keys.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_session_storage_size.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_size.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_text.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_top_left_coordinates.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_value_of_css_property.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_window_position.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\get_window_size.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\is_displayed.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\is_enabled.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\is_online.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\is_selected.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\move_mouse.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\pinch.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\remove_local_storage_item.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\remove_session_storage_item.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\right_click.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\rotate.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\scroll_into_view.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\scroll_mouse.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\set_local_storage_item.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\set_session_storage_item.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\set_window_position.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\set_window_size.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\submit.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\swipe.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\tap.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\type.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\webdriver_atoms.js" />
+    <Content Include="Slimerjs\vendors\ghostdriver\webelementlocator.js" />
+    <Content Include="Content\Styles\site.css" />
+    <Content Include="Content\Scripts\site.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Slimerjs\application.ini" />
+    <Content Include="Slimerjs\LICENSE" />
+    <Content Include="Slimerjs\omni.ja" />
+    <Content Include="Slimerjs\slimerjs.bat" />
+    <Content Include="Slimerjs\vendors\ghostdriver\ghostdriver.qrc" />
+    <Content Include="Slimerjs\vendors\ghostdriver\lastupdate" />
+    <Content Include="Slimerjs\vendors\ghostdriver\README.md" />
+    <Content Include="Slimerjs\vendors\ghostdriver\third_party\webdriver-atoms\lastupdate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\Logs\" />
+    <Folder Include="Screenshots\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Fonts\fontawesomemin.woff" />
+    <Content Include="Content\Fonts\fontawesomemin.woff2" />
+    <Content Include="Content\Fonts\fontawesomemin.ttf" />
+    <Content Include="PngQuant\COPYRIGHT" />
+    <None Include="Properties\PublishProfiles\DEPO Desktop.pubxml" />
+    <Content Include="Slimerjs\lib\LICENSE" />
+    <Content Include="Views\Home\Details.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3031</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3420/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

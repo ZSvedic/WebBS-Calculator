@@ -1,0 +1,438 @@
+[INFO] [17.09.2019 11:16:42] - Capture Start => URL:https://www.yourtopdestination.com/
+[ERROR] [17.09.2019 11:17:27] - Execute => URL:https://www.yourtopdestination.com/
+SLIMERJSLAUNCHER environment variable is missing or the path is invalid.
+Set it with the path to Firefox.
+"The current value of SLIMERJSLAUNCHER is: "
+SET "SLIMERJSLAUNCHER=%programfiles%\Mozilla Firefox\firefox.exe"
+
+[WARNING] [17.09.2019 11:17:27] - Capture Fail Timeout => URL:https://www.yourtopdestination.com/
+[INFO] [17.09.2019 11:18:37] - Capture Start => URL:https://www.gemboxsoftware.com/
+[ERROR] [17.09.2019 11:19:22] - Execute => URL:https://www.gemboxsoftware.com/
+SLIMERJSLAUNCHER environment variable is missing or the path is invalid.
+Set it with the path to Firefox.
+"The current value of SLIMERJSLAUNCHER is: "
+SET "SLIMERJSLAUNCHER=%programfiles%\Mozilla Firefox\firefox.exe"
+
+[WARNING] [17.09.2019 11:19:22] - Capture Fail Timeout => URL:https://www.gemboxsoftware.com/
+[INFO] [17.09.2019 11:20:07] - Capture Start => URL:https://f.0x52.eu/
+[ERROR] [17.09.2019 11:20:52] - Execute => URL:https://f.0x52.eu/
+SLIMERJSLAUNCHER environment variable is missing or the path is invalid.
+Set it with the path to Firefox.
+"The current value of SLIMERJSLAUNCHER is: "
+SET "SLIMERJSLAUNCHER=%programfiles%\Mozilla Firefox\firefox.exe"
+
+[WARNING] [17.09.2019 11:20:52] - Capture Fail Timeout => URL:https://f.0x52.eu/
+[INFO] [17.09.2019 11:33:18] - Capture Start => URL:https://www.amazon.com/
+[INFO] [17.09.2019 12:10:48] - Capture Start => URL:https://thewired.nl/
+[ERROR] [17.09.2019 12:11:33] - Execute => URL:https://thewired.nl/
+SLIMERJSLAUNCHER environment variable is missing or the path is invalid.
+Set it with the path to Firefox.
+"The current value of SLIMERJSLAUNCHER is: "
+SET "SLIMERJSLAUNCHER=%programfiles%\Mozilla Firefox\firefox.exe"
+
+[WARNING] [17.09.2019 12:11:33] - Capture Fail Timeout => URL:https://thewired.nl/
+[INFO] [17.09.2019 12:17:29] - Capture Start => URL:https://thewired.nl/
+[ERROR] [17.09.2019 12:17:32] - Execute => URL:https://thewired.nl/
+
+
+[WARNING] [17.09.2019 12:17:32] - Capture Fail => URL:https://thewired.nl/
+[INFO] [17.09.2019 12:18:08] - Capture Start => URL:https://thewired.nl/
+[ERROR] [17.09.2019 12:18:13] - Execute => URL:https://thewired.nl/
+page.open => FAIL - STATUS:fail - URL:https://thewired.nl/ 
+
+
+[WARNING] [17.09.2019 12:18:13] - Capture Fail => URL:https://thewired.nl/
+[INFO] [17.09.2019 12:18:31] - Capture Start => URL:https://thewired.nl/
+[ERROR] [17.09.2019 12:18:33] - Execute => URL:https://thewired.nl/
+page.open => FAIL - STATUS:fail - URL:https://thewired.nl/ 
+
+
+[WARNING] [17.09.2019 12:18:33] - Capture Fail => URL:https://thewired.nl/
+[INFO] [17.09.2019 12:20:05] - Capture Start => URL:https://thewired.nl/
+[ERROR] [17.09.2019 12:20:54] - Execute => URL:https://thewired.nl/
+page.open => FAIL - STATUS:fail - URL:https://thewired.nl/ 
+
+
+[WARNING] [17.09.2019 12:20:54] - Capture Fail => URL:https://thewired.nl/
+[INFO] [17.09.2019 12:21:04] - Capture Start => URL:https://youtube.com/
+[INFO] [17.09.2019 12:21:25] - Execute => URL:https://youtube.com/
+page.open => SUCCESS - URL:https://youtube.com/ 
+finish => renderTimeout 
+PageTitle=YouTube	PageCount=78	PageSize=1699780 
+
+
+[INFO] [17.09.2019 12:21:25] - Capture Success => URL:https://youtube.com/
+[INFO] [17.09.2019 12:22:41] - Capture Start => URL:https://f.0x52.eu/
+[INFO] [30.12.2019 09:47:44] - Capture Start => URL:https://www.google.com/ncr#q=web+bloat
+[INFO] [30.12.2019 09:47:50] - Execute => URL:https://www.google.com/ncr#q=web+bloat
+page.open => SUCCESS - URL:https://www.google.com/ncr#q=web+bloat 
+finish => renderTimeout 
+PageTitle=https://www.google.com/search?q=web+bloat&cad=h	PageCount=17	PageSize=664027 
+
+
+[INFO] [30.12.2019 09:47:50] - Capture Success => URL:https://www.google.com/ncr#q=web+bloat
+[INFO] [30.12.2019 09:48:33] - Capture Start => URL:https://www.yourtopdestination.com/
+[INFO] [30.12.2019 09:48:45] - Execute => URL:https://www.yourtopdestination.com/
+page.open => SUCCESS - URL:https://www.yourtopdestination.com/ 
+finish => renderTimeout 
+PageTitle=Travel Destination Finder - Search tool that recommends cities for your trip	PageCount=15	PageSize=1169343 
+
+
+[INFO] [30.12.2019 09:48:45] - Capture Success => URL:https://www.yourtopdestination.com/
+[INFO] [30.12.2019 09:49:40] - Capture Start => URL:https://www.amazon.com/
+[INFO] [30.12.2019 09:49:46] - Execute => URL:https://www.amazon.com/
+page.open => SUCCESS - URL:https://www.amazon.com/ 
+finish => renderTimeout 
+PageTitle=Robot Check	PageCount=9	PageSize=103936 
+
+
+[INFO] [30.12.2019 09:49:46] - Capture Success => URL:https://www.amazon.com/
+[INFO] [30.12.2019 09:50:02] - Capture Start => URL:https://www.alza.cz/
+[INFO] [30.12.2019 09:50:17] - Execute => URL:https://www.alza.cz/
+page.open => SUCCESS - URL:https://www.alza.cz/ 
+finish => renderTimeout 
+PageTitle=Alza.cz - největší obchod s počítači a elektronikou | Alza.cz	PageCount=157	PageSize=6439969 
+
+
+[INFO] [30.12.2019 09:50:17] - Capture Success => URL:https://www.alza.cz/
+[INFO] [30.12.2019 09:54:44] - Capture Start => URL:https://www.kiwi.com/
+[INFO] [30.12.2019 09:54:51] - Execute => URL:https://www.kiwi.com/
+page.open => SUCCESS - URL:https://www.kiwi.com/ 
+finish => renderTimeout 
+PageTitle=Kiwi.com | Find Cheap Flights & Discover New Destinations	PageCount=45	PageSize=3359936 
+
+
+[INFO] [30.12.2019 09:54:51] - Capture Success => URL:https://www.kiwi.com/
+[INFO] [30.12.2019 09:56:46] - Capture Start => URL:https://www.ryanair.com/
+[ERROR] [30.12.2019 09:56:56] - Execute => URL:https://www.ryanair.com/
+page.open => SUCCESS - URL:https://www.ryanair.com/ 
+finish => renderTimeout 
+
+
+[WARNING] [30.12.2019 09:56:56] - Capture Fail => URL:https://www.ryanair.com/
+[INFO] [30.12.2019 09:58:48] - Capture Start => URL:https://www.wizzair.com/
+[INFO] [30.12.2019 09:59:21] - Execute => URL:https://www.wizzair.com/
+page.open => SUCCESS - URL:https://www.wizzair.com/ 
+finish => renderTimeout 
+PageTitle=Official Wizz Air website | Book direct for the best prices	PageCount=155	PageSize=3304734 
+
+
+[INFO] [30.12.2019 09:59:21] - Capture Success => URL:https://www.wizzair.com/
+[INFO] [30.12.2019 10:07:54] - Capture Start => URL:https://www.slsp.sk/
+[INFO] [30.12.2019 10:08:30] - Execute => URL:https://www.slsp.sk/
+finish => forcedRenderTimeout 
+PageTitle=Ľudia - Slovenská sporiteľňa, a.s.	PageCount=145	PageSize=4510366 
+
+
+[INFO] [30.12.2019 10:08:30] - Capture Success Timeout => URL:https://www.slsp.sk/
+[INFO] [30.12.2019 10:09:47] - Capture Start => URL:http://ebay.com/
+[INFO] [30.12.2019 10:10:04] - Execute => URL:http://ebay.com/
+page.open => SUCCESS - URL:http://ebay.com/ 
+finish => renderTimeout 
+PageTitle=Electronics, Cars, Fashion, Collectibles & More | eBay	PageCount=92	PageSize=2061116 
+
+
+[INFO] [30.12.2019 10:10:04] - Capture Success => URL:http://ebay.com/
+[INFO] [30.12.2019 10:12:51] - Capture Start => URL:https://www.tripadvisor.com/
+[INFO] [30.12.2019 10:13:16] - Execute => URL:https://www.tripadvisor.com/
+page.open => SUCCESS - URL:https://www.tripadvisor.com/ 
+finish => renderTimeout 
+PageTitle=TripAdvisor: Read Reviews, Compare Prices & Book	PageCount=512	PageSize=2600370 
+finish => renderTimeout 
+
+
+[INFO] [30.12.2019 10:13:16] - Capture Success => URL:https://www.tripadvisor.com/
+[INFO] [30.12.2019 10:17:36] - Capture Start => URL:https://www.amazon.com/
+[INFO] [30.12.2019 10:17:41] - Capture Success => URL:https://www.amazon.com/
+[INFO] [02.01.2020 09:24:12] - Capture Start => URL:https://www.google.com/ncr#q=web+bloat
+[ERROR] [02.01.2020 09:24:15] - Execute => URL:https://www.google.com/ncr#q=web+bloat
+page.open => FAIL - STATUS:fail - URL:https://www.google.com/ncr#q=web+bloat 
+
+
+[WARNING] [02.01.2020 09:24:15] - Capture Fail => URL:https://www.google.com/ncr#q=web+bloat
+[INFO] [02.01.2020 09:25:12] - Capture Start => URL:https://www.w3.org/People/Berners-Lee/
+[INFO] [02.01.2020 09:25:17] - Execute => URL:https://www.w3.org/People/Berners-Lee/
+page.open => SUCCESS - URL:https://www.w3.org/People/Berners-Lee/ 
+finish => renderTimeout 
+PageTitle=Tim Berners-Lee	PageCount=3	PageSize=8186 
+
+
+[INFO] [02.01.2020 09:25:17] - Capture Success => URL:https://www.w3.org/People/Berners-Lee/
+[ERROR] [02.01.2020 09:25:17] - System.InvalidOperationException => This request has been blocked because sensitive information could be disclosed to third party web sites when this is used in a GET request. To allow GET requests, set JsonRequestBehavior to AllowGet.
+   at System.Web.Mvc.JsonResult.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+[INFO] [02.01.2020 09:25:21] - Capture Start => URL:https://www.amazon.com/
+[INFO] [02.01.2020 09:25:27] - Execute => URL:https://www.amazon.com/
+page.open => SUCCESS - URL:https://www.amazon.com/ 
+finish => renderTimeout 
+PageTitle=Robot Check	PageCount=9	PageSize=103495 
+
+
+[INFO] [02.01.2020 09:25:27] - Capture Success => URL:https://www.amazon.com/
+[ERROR] [02.01.2020 09:25:27] - System.InvalidOperationException => This request has been blocked because sensitive information could be disclosed to third party web sites when this is used in a GET request. To allow GET requests, set JsonRequestBehavior to AllowGet.
+   at System.Web.Mvc.JsonResult.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+[ERROR] [02.01.2020 09:26:56] - System.Web.HttpException => A public action method 'Capture' was not found on controller 'WebBloatScore.Controllers.HomeController'.
+   at System.Web.Mvc.Controller.HandleUnknownAction(String actionName)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+[ERROR] [02.01.2020 09:27:02] - System.Web.HttpException => A public action method 'Capture' was not found on controller 'WebBloatScore.Controllers.HomeController'.
+   at System.Web.Mvc.Controller.HandleUnknownAction(String actionName)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+[INFO] [02.01.2020 09:27:16] - Capture Start => URL:https://www.w3.org/People/Berners-Lee/
+[INFO] [02.01.2020 09:27:22] - Execute => URL:https://www.w3.org/People/Berners-Lee/
+page.open => SUCCESS - URL:https://www.w3.org/People/Berners-Lee/ 
+finish => renderTimeout 
+PageTitle=Tim Berners-Lee	PageCount=3	PageSize=8186 
+
+
+[INFO] [02.01.2020 09:27:22] - Capture Success => URL:https://www.w3.org/People/Berners-Lee/
+[INFO] [02.01.2020 09:36:52] - Capture Start => URL:https://www.amazon.com/
+[INFO] [02.01.2020 09:36:57] - Execute => URL:https://www.amazon.com/
+page.open => SUCCESS - URL:https://www.amazon.com/ 
+finish => renderTimeout 
+PageTitle=Robot Check	PageCount=9	PageSize=104198 
+
+
+[INFO] [02.01.2020 09:36:57] - Capture Success => URL:https://www.amazon.com/
+[INFO] [02.01.2020 09:50:05] - Capture Start => URL:https://www.wizzair.com/
+[INFO] [02.01.2020 09:50:40] - Execute => URL:https://www.wizzair.com/
+page.open => SUCCESS - URL:https://www.wizzair.com/ 
+finish => renderTimeout 
+PageTitle=Official Wizz Air website | Book direct for the best prices	PageCount=154	PageSize=3075433 
+
+
+[INFO] [02.01.2020 09:50:40] - Capture Success => URL:https://www.wizzair.com/
+[INFO] [02.01.2020 09:54:20] - Capture Start => URL:https://www.tripadvisor.com/
+[INFO] [02.01.2020 09:54:45] - Execute => URL:https://www.tripadvisor.com/
+page.open => SUCCESS - URL:https://www.tripadvisor.com/ 
+finish => renderTimeout 
+PageTitle=TripAdvisor: Read Reviews, Compare Prices & Book	PageCount=514	PageSize=2568085 
+finish => renderTimeout 
+
+
+[INFO] [02.01.2020 09:54:45] - Capture Success => URL:https://www.tripadvisor.com/
+[INFO] [02.01.2020 09:59:30] - Capture Start => URL:https://www.foxnews.com/
+[INFO] [02.01.2020 09:59:45] - Execute => URL:https://www.foxnews.com/
+page.open => SUCCESS - URL:https://www.foxnews.com/ 
+finish => renderTimeout 
+PageTitle=Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos	PageCount=188	PageSize=1825574 
+
+
+[INFO] [02.01.2020 09:59:45] - Capture Success => URL:https://www.foxnews.com/
+[ERROR] [02.01.2020 11:06:13] - System.ArgumentException => The parameters dictionary contains a null entry for parameter 'timeout' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Capture(System.Uri, Int32)' in 'WebBloatScore.Controllers.HomeController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+   at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.<>c__DisplayClass1.<Execute>b__0(ParameterInfo parameterInfo)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.InvokeSynchronousActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+[INFO] [02.01.2020 11:10:28] - Capture Start => URL:https://www.foxnews.com/, timeout: 100
+[ERROR] [02.01.2020 11:10:28] - Execute => URL:https://www.foxnews.com/
+
+[WARNING] [02.01.2020 11:10:28] - Capture Fail Timeout => URL:https://www.foxnews.com/
+[INFO] [02.01.2020 11:11:01] - Capture Start => URL:https://www.foxnews.com/, timeout: 100
+[ERROR] [02.01.2020 11:11:01] - Execute => URL:https://www.foxnews.com/
+
+[WARNING] [02.01.2020 11:11:01] - Capture Fail Timeout => URL:https://www.foxnews.com/
+[INFO] [02.01.2020 11:11:12] - Capture Start => URL:https://www.foxnews.com/, timeout: 100
+[ERROR] [02.01.2020 11:11:12] - Execute => URL:https://www.foxnews.com/
+
+[WARNING] [02.01.2020 11:11:12] - Capture Fail Timeout => URL:https://www.foxnews.com/
+[INFO] [02.01.2020 11:11:27] - Capture Start => URL:https://www.foxnews.com/, timeout: 100
+[ERROR] [02.01.2020 11:11:46] - Execute => URL:https://www.foxnews.com/
+
+[WARNING] [02.01.2020 11:11:46] - Capture Fail Timeout => URL:https://www.foxnews.com/
+[INFO] [02.01.2020 11:12:25] - Capture Start => URL:https://www.foxnews.com/, timeout: 200
+[ERROR] [02.01.2020 11:12:26] - Execute => URL:https://www.foxnews.com/
+
+[WARNING] [02.01.2020 11:12:26] - Capture Fail Timeout => URL:https://www.foxnews.com/
+[INFO] [02.01.2020 11:14:24] - Capture Start => URL:https://www.thesun.co.uk/news/, timeout: 200
+[ERROR] [02.01.2020 11:14:33] - Execute => URL:https://www.thesun.co.uk/news/
+
+[INFO] [02.01.2020 11:16:09] - Capture Start => URL:https://www.foxnews.com/, timeout: 600
+[ERROR] [02.01.2020 11:16:10] - Execute => URL:https://www.foxnews.com/
+
+[WARNING] [02.01.2020 11:16:10] - Capture Fail Timeout => URL:https://www.foxnews.com/
+[INFO] [02.01.2020 11:17:00] - Capture Start => URL:https://www.foxnews.com/, timeout: 400
+[ERROR] [02.01.2020 11:17:00] - Execute => URL:https://www.foxnews.com/
+
+[WARNING] [02.01.2020 11:17:00] - Capture Fail Timeout => URL:https://www.foxnews.com/
+[INFO] [02.01.2020 11:18:35] - Capture Start => URL:https://www.foxnews.com/, timeout: 600000
+[INFO] [02.01.2020 11:18:59] - Execute => URL:https://www.foxnews.com/
+page.open => SUCCESS - URL:https://www.foxnews.com/ 
+finish => renderTimeout 
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: [D2D1.1] Attempt to use unsupported surface size Size(1350,16385) (t=118.447) [GFX1-]: [D2D1.1] Attempt to use unsupported surface size Size(1350,16385)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: [D2D1.1] Attempt to use unsupported surface size Size(1350,16385) (t=118.447) |[1][GFX1-]: Failed to create DrawTarget, Type: 7 Size: Size(1350,16385) (t=118.447) [GFX1-]: Failed to create DrawTarget, Type: 7 Size: Size(1350,16385)
+PageTitle=Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos	PageCount=205	PageSize=2079723 
+
+
+[INFO] [02.01.2020 11:18:59] - Capture Success => URL:https://www.foxnews.com/
+[INFO] [02.01.2020 01:44:02] - Capture Start => URL:https://www.google.com/ncr#q=web+bloat, timeout: 60000
+[INFO] [02.01.2020 01:44:09] - Execute => URL:https://www.google.com/ncr#q=web+bloat
+page.open => SUCCESS - URL:https://www.google.com/ncr#q=web+bloat 
+finish => renderTimeout 
+PageTitle=https://www.google.com/search?q=web+bloat&cad=h	PageCount=17	PageSize=664505 
+
+
+[INFO] [02.01.2020 01:44:09] - Capture Success => URL:https://www.google.com/ncr#q=web+bloat
+[INFO] [10.01.2020 11:07:16] - Capture Start => URL:https://www.yourtopdestination.com/, timeout: 60000
+[INFO] [10.01.2020 11:07:32] - Execute => URL:https://www.yourtopdestination.com/
+page.open => SUCCESS - URL:https://www.yourtopdestination.com/ 
+finish => renderTimeout 
+PageTitle=Travel Destination Finder - Search tool that recommends cities for your trip	PageCount=15	PageSize=1169343 
+
+
+[INFO] [10.01.2020 11:07:32] - Capture Success => URL:https://www.yourtopdestination.com/
+[INFO] [10.01.2020 11:16:02] - Capture Start => URL:https://www.w3.org/People/Berners-Lee/, timeout: 60000
+[INFO] [10.01.2020 11:16:08] - Execute => URL:https://www.w3.org/People/Berners-Lee/
+page.open => SUCCESS - URL:https://www.w3.org/People/Berners-Lee/ 
+finish => renderTimeout 
+PageTitle=Tim Berners-Lee	PageCount=3	PageSize=8188 
+
+
+[INFO] [10.01.2020 11:16:08] - Capture Success => URL:https://www.w3.org/People/Berners-Lee/

@@ -1,0 +1,33 @@
+﻿@font-face {
+ font-family:'fontawesomemin';
+ src: url('../Fonts/fontawesomemin.woff') format('woff'),
+      url('../Fonts/fontawesomemin.woff2') format('woff2'),
+      url('../Fonts/fontawesomemin.ttf') format('truetype');
+ font-weight:normal;
+ font-style:normal;
+}
+.icon:before, .icon:after {
+ font-family:"fontawesomemin";
+ font-style:normal;
+ font-weight:normal;
+ font-variant:normal;
+ text-transform:none;
+ text-decoration:none;
+ speak:none;
+ -webkit-font-smoothing:antialiased;
+ -moz-osx-font-smoothing:grayscale;
+}
+.icon:hover, .icon:active, .icon:focus {
+ text-decoration:none;
+}
+.icon-new-tab:before, .icon-share:after {
+ margin-left:5px;
+}
+.icon-facebook:before, .icon-twitter:before, .icon-googleplus:before {
+ margin-right:5px;
+}
+.icon-new-tab:before { content: '\f14c'; }
+.icon-share:after { content: '\f14d'; }
+.icon-facebook:before { content: '\f308'; }
+.icon-twitter:before { content: '\f304'; }
+.icon-googleplus:before { content: '\f0d4'; }

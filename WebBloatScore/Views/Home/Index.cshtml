@@ -1,0 +1,121 @@
+﻿@{Layout = "~/Views/Shared/_Layout.cshtml";}
+
+<div class="main-container">
+	<div class="main-content center">
+		<table class="full">
+			<tr>
+				<td class="full"><input id="page" type="text" placeholder="http://example.com/" class="full"/></td>
+				<td>
+					<select id="timeout">
+						<option value="60">Default timeout (60s)</option>
+						<option value="120">2 minutes</option>
+						<option value="300">5 minutes</option>
+						<option value="600">10 minutes</option>
+					</select>
+				</td>
+				<td><input id="calculator" type="button" value="Calculate"/></td>
+			</tr>
+		</table>
+		<div id="loader"></div>
+		<div id="notifier"></div>
+		<table id="scores-table" class="full hide">
+			<colgroup>
+				<col style="width:28%;"/>
+				<col style="width:28%;"/>
+				<col style="width:22%;"/>
+				<col style="width:14%;"/>
+				<col style="width:8%;"/>
+			</colgroup>
+			<thead>
+				<tr>
+					<th>URL</th>
+					<th>PAGE SIZE</th>
+					<th>IMAGE SIZE</th>
+					<th>WEB-BS</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody id="scores"></tbody>
+		</table>
+		<div class="examples">
+			<b>EXAMPLES</b>
+			<ul>
+				<li><a class="example" href="https://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a></li>
+				<li><a class="example" href="/">This page</a></li>
+				<li><a class="example" href="https://www.google.com/ncr#q=web+bloat">web bloat - Google Search</a></li>
+				<li><a class="example" href="https://edition.cnn.com/">CNN</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<article class="article center">
+	<h2>What is this?</h2>
+	<p>Page web bloat score (WebBS for short) is calculated as follows:</p>
+	<p class="center-txt"><em>WebBS = TotalPageSize / PageImageSize</em></p>
+	<p><em>TotalPageSize</em> is the size of all requests, and <em>PageImageSize</em> is the size of a full-page screenshot.</p>
+	<p>The larger the WebBS, the more bloated a web page is <em>relative to its image representation</em>. For example, <a href="https://www.w3.org/People/Berners-Lee/" target="_blank">Tim Berners-Lee's homepage</a> has a WebBS of 0.204, which makes it really efficient, while <a href="https://edition.cnn.com/" target="_blank">CNN</a> has score of ~6, making it bloated.</p>
+
+	<h2>Why?</h2>
+	<p>In order to fix something, we need to measure it first.</p>
+	<p>Web bloat is a hot topic now: see posts by <a href="http://idlewords.com/talks/website_obesity.htm" target="_blank">Maciej</a>, <a href="https://mobiforge.com/research-analysis/the-web-is-doom" target="_blank">Ronan</a>, and <a href="https://www.soasta.com/blog/page-bloat-average-web-page-2-mb/" target="_blank">Tammy</a>. However, most of us still use a subjective absolute measurement: if it loads fast on your computer, then it's good. That &quot;measure&quot; is flawed: a web page with only two paragraphs that weighs 500 kB is going to load fast—but it's still bloated!</p>
+	<p>So, how to measure web bloat?</p>
+	<p>HTML is a text-based protocol, designed to render a graphics document on the client. The idea was that text is smaller to transfer than the full resolution image of a document. If that weren't so, Tim Berners-Lee would have designed a protocol to transfer images, not text and markup. That gives a convenient way to measure the bloat of any static web page—just compare it to a full-page screenshot of the same page.</p>
+
+	<h2>An example</h2>
+	<p>Take the <a href="https://www.google.com/ncr#q=web+bloat" target="_blank">&quot;web bloat&quot;</a> Google search results page (SERP).</p>
+	<p>Measuring absolutely, it <a href="/Content/Images/Google-Results.png" target="_blank">weighs 416 kB and loads in 1.11 seconds</a>. That's fast.</p>
+	<p>However, a WebBS of 6.94 shows that it is bloated <em>relative to its information content</em>.</p>
+	<p>Not a huge surprise, as in 1998 the Google homepage <a href="http://wayback.archive.org/web/19981202230410/http://www.google.com/" target="_blank">was only 10 kB</a>. And the content is pretty much the same: ten links. Sure, today it has voice search and auto-suggest, but most people <a href="https://en.wikipedia.org/wiki/Search_engine_results_page#Organic_results" target="_blank">just click on the first few links</a>.</p>
+	
+	<h2>My web page has a WebBS&gt;1, what do I do?</h2>
+	<p>Convert your page to an <a href="https://en.wikipedia.org/wiki/Image_map#Client-side" target="_blank">image map</a>. For example, <a href="http://svedic.org/Zeljko/WebBloat/index.html" target="_blank">Google SERP as an clickable image map</a> is only 106.7 kB (and two requests).</p>
+	<p>Just kidding! But a surprising number of pages would be faster if Tim had created a pixel transfer protocol.</p>
+	<p>A high WebBS usually indicates unused stuff on the page: JavaScript, CSS, oversized images, etc. Maybe you have a valid reason for that content. But more often than not, it means you can optimize it more.</p>
+	
+	<h2>But wait: your sponsor's page is also bloated?!</h2>
+	<p>Ooops. Yes, the WebBS of <a href="https://www.testdome.com/" target="_blank">TestDome.com</a> is 3.35.</p>
+	<p>It used to be much worse, and that's how all this started. As a TestDome co-founder, a few months ago I noticed that the homepage had become slightly slower. I opened the source HTML and found that nine customer reference logos were embedded in full resolution, like <a href="https://www.testdome.com/Content/images/cineplex-logo.jpg" target="_blank">this 150 kB monster</a>. I asked a developer to fix it, and he did a great job converting logos to <a href="https://www.testdome.com/Content/images/customers.png" target="_blank">css sprites</a>. But he told me he would leave <a href="https://drive.google.com/file/d/0B0-2dMPoU7VhM3VEVy00MnhFMGc/view" target="_blank">13 other requests for web chat</a> unchanged, because they are async and provided by a third party. The same with five requests for Google analytics. The designer wanted to leave a custom web font and jQuery gets cached anyway. In the end, we're a startup, and there are more urgent tasks than hand-coding our homepage.</p>
+	<p>We left it as it is, and I realised that popular web stacks make it hard to develop non-bloated pages.</p>
+	
+	<h2>How do you generate screenshots, and why PNG?</h2>
+	<p>Requests go to an Azure VPS machine running SlimerJS, a <a href="https://en.wikipedia.org/wiki/Headless_browser" target="_blank">scriptable browser</a>. That is similar technology to what we use for <a href="https://www.testdome.com/Tests/Html-Css-JavaScript-online-test/16" target="_blank">web programming tests</a>. The current calculator can process ~@ViewBag.ScreenshotsPerMinute screenshots per minute; after that limit is reached, a page with instructions on how to <a href="/TooManyRequests.html" target="_blank">calculate WebBS manually</a> is displayed.</p>
+	<p>It was our arbitrary decision to use PNG, as they are lossless compression. Maybe JPEGs would be better, most web pages have lossy JPEGs on them anyway.</p>
+	<p>To measure the web bloat of a dynamic page (video or animation), compare it with compressed video of the same page. But this calculator doesn't do that.</p>
+	
+	<h2>How can the image of a page be smaller than the page itself?</h2>
+	<p>Because web pages have been growing exponentially:</p>
+	<p class="center-txt"><img src="/Content/Images/growth-average-web-page2014.png" title="Growth of Average Web Page Size and Number of Objects, source: http://svedic.org/wp-content/uploads/2016/08/growth-average-web-page2014.png" alt="Growth of Average Web Page Size and Number of Objects" /></p>
+	<p>As of September 2016, the average web page is <a href="http://httparchive.org/trends.php?s=Top1000&minlabel=May+1+2016&maxlabel=Sep+1+2016" target="_blank">2496 kB in size and requires 140 requests</a>.</p>
+	<p>To understand why, we need a bit of history...</p>
+	<h2>The long tale of two tribes</h2>
+	<p>Since the first computers were connected, there was a fight. Between <a href="https://en.wikipedia.org/wiki/Computer_terminal#.22Intelligent.22_terminals" target="_blank">the &quot;thin&quot; tribe and the &quot;fat&quot; tribe</a>.</p>
+	<p class="center-txt"><img src="/Content/Images/Laurel_Hardy_Flying_Deuces.jpg" title="Laurel & Hardy in Flying Deuces, source: https://upload.wikimedia.org/wikipedia/commons/6/6e/Laurel_%26_Hardy_in_Flying_Deuces_1_edited.png" alt="Laurel & Hardy in Flying Deuces" /></p>
+	<p>The thin tribe wanted to render everything on the source server and make the destination server a &quot;dumb&quot; terminal. Quick, simple, and zero dependency. But the fat tribe said no, it's stupid to transfer every graphics element. Let's make a fat &quot;smart&quot; client that executes rendering (or part of the business logic) on the destination server. Then you don't need to transfer every graphics element, just the minimum data. The fat tribe always advertised three benefits of fat, smart clients: <em>smaller bandwidth</em>, <em>less latency</em>, and that <em>the client can render arbitrary stuff</em>.</p>
+	<p>But, in the early days of computing, &quot;graphics&quot; was just plain text. Data was pretty much the same as its graphic representation, and people could live with a short latency after they pressed enter at a command line. The thin tribe won and the text terminal conquered the world. The peak of this era was the IBM mainframe, a server that can simultaneously serve thousands of clients thanks to its <a href="https://en.wikipedia.org/wiki/Channel_I/O" target="_blank">I/O processors</a>. The fat tribe retreated, shaking its collective fist, saying, &quot;Just you wait—one day graphics will come, and we'll be back!&quot;</p>
+	<p>They waited until the 80s. Graphics terminals become popular, but they were sluggish. Sending every line, color, or icon over the wire sucked up the bandwidth. When dragging and rearranging elements with the mouse, you could see the latency. Unlike simple text flow, graphics brought myriad screen resolutions, color depths, and DPI.</p>
+	<p>&quot;We told you so!&quot; said the fat tribe, and started creating smart client-server solutions. Client-servers and PCs were all the rage in the 80s. But even bigger things were on the horizon.</p>
+	<p>In 1989, Tim Berners-Lee was thinking about how to create world wide web of information. He decided not to join a tribe but to go the middle route. His invention, HTML, would transfer only the semantic information, not the representation. You could override how fonts or colors looked in your client, to the joy of fat tribe. But for all relevant computing you would do a round trip to the server, to the delight of the thin tribe. Scrolling, resizing, and text selection were instantaneous: there was only a wait when you decided to go to the next page. Tim's invention took the world by the storm. It was exactly the &quot;graphics terminal&quot; that nobody wished for but everybody needed. It was open and people started creating clients and adding more features.</p>
+	<p>The first candy was inline images. They required more bandwidth, but the designers promised to be careful and always embed the optimized thumbnail in the page. They also didn't like the free floating text, so they started using tables to make fixed layouts.</p>
+	<p>Programmers wanted to add code on the client for validation, animation, or just for reducing round trips. First they got Java applets, then JavaScript, then Flash.</p>
+	<p>Publishers wanted audio and video, and then they wanted ads.</p>
+	<p>Soon the web became a true fat client, and everybody liked it.</p>
+	<p class="center-txt"><img src="/Content/Images/Laurel-Hardy-Men-O-War.jpg" title="Laurel & Hardy - Men O War, source: https://www.flickr.com/photos/kndynt2099/5739972498/in/photostream/" alt="Laurel & Hardy - Men O War" /></p>
+	<p>The thin tribe was acting like a crybaby: &quot;You can't have so many dependencies—the latest Java, latest Flash, latest Real media encoder, different styles for different browsers, it's insane!&quot; They went on to develop <a href="https://en.wikipedia.org/wiki/Remote_Desktop_Protocol" target="_blank">Remote desktop</a>, <a href="https://en.wikipedia.org/wiki/XenDesktop" target="_blank">Citrix XenDesktop</a>, <a href="https://en.wikipedia.org/wiki/Virtual_Network_Computing" target="_blank">VNC</a>, and other uncool technologies used by guys in grey suits. But they knew that <a href="http://www.montulli.org/theoriginofthe%3Cblink%3Etag" target="_blank">adding crap to the client</a> couldn't last forever. And there is a fundamental problem with HTML…</p>
+	<p class="center-txt"><em>HTML was designed for academics, not the average Joe</em></p>
+	<p>Look at the homepages of <a href="https://www.w3.org/People/Berners-Lee/" target="_blank">Tim Berners-Lee</a>, <a href="http://www.stroustrup.com/" target="_blank">Bjarne Stroustrup</a>, and <a href="http://www-cs-faculty.stanford.edu/~uno/" target="_blank">Donald Knuth</a>. All three <em>together</em> have 235 kB, less than one Google <a href="https://en.wikipedia.org/wiki/Search_engine_results_page" target="_blank">SERP</a>. Images are optimized, most of the content is above the fold, and their pages were &quot;responsive&quot; two decades before responsive design became a thing. But they are all ugly. If the father of the WWW, the father of C++, and the father of computer algorithms were in an evening web development class, they would all get an F and be asked to do their homepages again.</p>
+	<p>The average Joe prefers form over content and is too lazy to write optimized code. To be honest, I would be an average Joe if I were a web developer. Implementing customer features brings more money and fame than optimizing CSS sprites. This leads me to a conclusion:</p>
+	<p class="center-txt"><em>You can't blame web developers for making a completely rational decision.</em></p>
+	<p>If a 2496 kB page weight is the average, not an exception, then it is a failure of the technology, not all the people who are using it.</p>
+	<p>At one point, Google realized there was an issue with the web. Their solution: <a href="https://en.wikipedia.org/wiki/SPDY" target="_blank">SPDY</a> (now <a href="https://en.wikipedia.org/wiki/HTTP/2#Genesis_in_and_later_differences_from_SPDY" target="_blank">part of HTTP/2</a>) and <a href="https://en.wikipedia.org/wiki/Brotli" target="_blank">Brotli</a>. The idea is that, although the web is bloated, we will create the technology to fix the bloat on the fly. Brotli is particularly interesting, as it uses a <a href="https://tools.ietf.org/html/draft-alakuijala-brotli-04#appendix-A" target="_blank">predefined 120 kB dictionary</a> containing the most common words in <a href="http://www.gstatic.com/b/brotlidocs/brotli-2015-09-22.pdf" target="_blank">English, Chinese, Arabic, as well as common phrases in HTML and JavaScript</a>! But, there is only so much that lipstick can do for a pig. Even the best web compressor can't figure out whether all that JS and CS is actually going to be used, or replace images with thumbnails or improve the JPEG compression ratio because the user would never notice the difference. Lossless compression of some 255 kB JS library doesn't help much.</p>
+	<p>The thin tribe realized that with a good compressor and good bandwidth the game changes. <a href="https://en.wikipedia.org/wiki/OnLive#History" target="_blank">OnLive Game Service was launched in 2010</a>, allowing you to stream games from the cloud. The next year, Gaikai launched their service for cloud gaming. They were not competitors for long: Sony purchased Gaikai in 2012, and all OnLive patents in 2015. They used the technology to create <a href="https://en.wikipedia.org/wiki/PlayStation_Now" target="_blank">PlayStation Now</a>. Today I can play more than <a href="https://en.wikipedia.org/wiki/List_of_PlayStation_Now_games" target="_blank">400 live games</a> on Samsung Smart TV, at <a href="https://www.youtube.com/watch?v=UQqA1KEKETA" target="_blank">30 frames per second</a>. But I still need to wait <a href="https://drive.google.com/open?id=0B0-2dMPoU7VhMDMtRWR6TERwOFk" target="_blank">8.3 second to fully load the CNN homepage</a>. Who is crazy here?</p>
+	<p>Remember main arguments of the fat tribe: <em>smaller bandwidth</em>, <em>less latency</em>, and that <em>the client can render arbitrary stuff</em>. Seems that with websites of 2016, thin tribe can do all of that equally good or better.</p>
+	<p>In my modest opinion, the web is in the state of bloat because the fat tribe screwed it up. Today's technology makes it too easy to create bloated websites and too hard make slim ones.</p>
+	
+	<h2>About</h2>
+	<p><a href="http://svedic.org/about" target="_blank">Zel</a> is the author of this text, parts of which are copied from his earlier &quot;PXT Protocol&quot; article. But that article is a piece of crap, as even smart readers of reddit <a href="https://www.reddit.com/r/tech/comments/4wlfo1/web_bloat_solution_pxt_protocol" target="_blank">didn't figure out it was a sarcastic piece</a>.</p>
+	<p>If you think that this page does a better job of demonstrating the web bloat problem, please share:</p>
+	<p class="social-txt">
+		<a class="icon icon-facebook" href="https://www.facebook.com/sharer.php?u=http://www.webbloatscore.com/" target="_blank"></a><a class="icon icon-twitter" href="https://twitter.com/intent/tweet?url=http://www.webbloatscore.com/&text=Calculate%20the%20Bloat%20Score%20of%20any%20website." target="_blank"></a><a class="icon icon-googleplus" href="https://plus.google.com/share?url=http://www.webbloatscore.com/" target="_blank"></a>
+	</p>
+</article>
