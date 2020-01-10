@@ -141,7 +141,6 @@
     <Content Include="Content\Images\Laurel_Hardy_Flying_Deuces.jpg" />
     <Content Include="PngQuant\pngquant.exe" />
     <Content Include="PngQuant\README.txt" />
-    <Content Include="README.md" />
     <Content Include="TooManyRequests.html" />
     <Content Include="Content\Images\growth-average-web-page2014.png" />
     <Content Include="Content\Images\Laurel-Hardy-Men-O-War.jpg" />
