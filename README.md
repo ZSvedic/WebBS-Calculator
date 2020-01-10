@@ -1,6 +1,6 @@
 # WebBS-Calculator
 
-This is source code used to build Web Bloat Score Calculator: https://www.webbloatscore.com/
+Source code for Web Bloat Score Calculator: https://www.webbloatscore.com/
 
 ## How to run the project
 WebBS-Calculator uses [SlimmerJS](https://github.com/laurentj/slimerjs) scriptable browser that requires Firefox of version 48 or older to be installed on your computer.
