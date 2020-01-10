@@ -50,6 +50,12 @@ img {
  font-size: 15px;
 }
 
+.fork-link {
+ position: absolute;
+ right: 0;
+ top: 0;
+}
+
 
 /* ############################## */
 /*              MAIN              */
