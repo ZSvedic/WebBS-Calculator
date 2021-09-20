@@ -10,7 +10,7 @@ namespace WebBloatScore.Models
     public class SlimerExecutor
     {
         private const string PageTitle = "title";
-        private const string PageTitlePlaceholder = "(?<" + PageTitle + ">([^\t]+))";
+        private const string PageTitlePlaceholder = "(?<" + PageTitle + ">([^\t]*))";
         private const string PageCount = "count";
         private const string PageCountPlaceholder = "(?<" + PageCount + ">([\\d]+))";
         private const string PageSize = "size";
