@@ -23,3 +23,8 @@ In the project the calculation is happening in the [SlimmerExecutor](https://git
 The tasks necessary to calculate the score are time-consuming and depending on the hardware can take several minutes to complete.
 Therefore the [timeout](https://github.com/ZSvedic/WebBS-Calculator/blob/master/WebBloatScore/Controllers/HomeController.cs#L93) is used
 to limit the execution time. On top of that [caching](https://github.com/ZSvedic/WebBS-Calculator/blob/master/WebBloatScore/Controllers/HomeController.cs#L85) of the most used [websites](https://github.com/ZSvedic/WebBS-Calculator/blob/master/WebBloatScore/Utilities.cs#L16) is used to save resources.
+
+## Issue with Let's Encrypt SSL certificates
+In the [Issue 3](https://github.com/ZSvedic/WebBS-Calculator/issues/3) it was noted that serveral websites stopped working. The issue is happening because of the combination of SlimmerJS and Firefox version 48 which doesn't trust certificates of given websites even though they are valid. We noticed this is happening for website which have the certificate from Let's Encrypt.
+
+These tools are obsolote and became hard to maintain and it would be necessary to replace them. We currently don't plan to expand the tool so this issue remains unresolved. However, we would be happy to accept the help with this issue from the community.
