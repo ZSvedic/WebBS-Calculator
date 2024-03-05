@@ -1,6 +1,4 @@
-# WebBS-Calculator
-
-Live demo of Web Bloat Score Calculator: https://www.webbloatscore.com/
+The web bloat score is calculated as `WebBS = TotalPageSize / PageImageSize`
 
 ## How to run the project
 WebBS-Calculator uses the [SlimmerJS](https://github.com/laurentj/slimerjs) scriptable browser that requires Firefox version 48 or older to be installed on your computer.
@@ -12,8 +10,6 @@ file on lines [202](https://github.com/ZSvedic/WebBS-Calculator/blob/master/WebB
 After that you can simply run the WebBloatScore ASP.NET MVC application.
  
 ## Calculation
-As described on https://www.webbloatscore.com/, the web bloat score is calculated as `WebBS = TotalPageSize / PageImageSize`
-
 In the project the calculation is happening in the [SlimmerExecutor](https://github.com/ZSvedic/WebBS-Calculator/blob/master/WebBloatScore/Models/SlimerExecutor.cs) class:
 1. First SlimmerJS is [executed](https://github.com/ZSvedic/WebBS-Calculator/blob/master/WebBloatScore/Models/SlimerExecutor.cs#L70). It creates and stores a screenshot of the web page and returns the total size of the page.
 2. After that [PngQuant](https://github.com/kornelski/pngquant) library is used to [optimize](https://github.com/ZSvedic/WebBS-Calculator/blob/master/WebBloatScore/Models/SlimerExecutor.cs#L125) the screenshot of the page.
